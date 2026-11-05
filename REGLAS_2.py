@@ -1,4 +1,4 @@
-# PARTE 3: Reglas 
+# PARTE 2: Reglas 
 def contar_vecinos(tablero):
     """
     Devuelve una matriz del mismo tamaño donde cada número es
