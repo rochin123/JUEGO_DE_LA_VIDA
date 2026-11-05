@@ -22,6 +22,8 @@ Intrucciones de instalación y ejecución:
 
 
 2- Crear una copia del repositorio en tu dispositivo.
+
+
 <img width="328" height="269" alt="image" src="https://github.com/user-attachments/assets/25079716-4eb6-414a-a734-7a49fb83f007" />
 
 Lo puedes hacer desde la terminal poniendo;
