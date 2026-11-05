@@ -1,13 +1,6 @@
-# =====================================================
 # PARTE 3: INTERFAZ (Streamlit)
-# =====================================================
-# Dentro de INTERFAZ_3.py
 import TABLERO_1
 import REGLAS_2
-
-# O bien, si importan funciones específicas:
-# from TABLERO_1 import crear_tablero
-# from REGLAS_2 import aplicar_reglas
 
 def tablero_a_imagen(tablero):
     """Convierte la matriz en una imagen: vivas verdes, muertas oscuras."""
@@ -18,8 +11,6 @@ def tablero_a_imagen(tablero):
     imagen = np.repeat(np.repeat(imagen, TAM_CELDA, axis=0), TAM_CELDA, axis=1)
     return imagen
 st.title("Juego de la Vida")
-# Streamlit reinicia el script en cada clic, así que guardamos
-# el tablero en session_state para que no se pierda.
 if "tablero" not in st.session_state:
     st.session_state.tablero = crear_tablero_aleatorio()
     st.session_state.generacion = 0
@@ -45,7 +36,6 @@ if col4.button("Limpiar"):
 st.write(f"Generación: {st.session_state.generacion}")
 st.image(tablero_a_imagen(st.session_state.tablero))
 
-# Si está corriendo: avanza una generación y vuelve a dibujar
 if st.session_state.corriendo:
     time.sleep(0.1)
     st.session_state.tablero = siguiente_generacion(st.session_state.tablero)
