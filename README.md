@@ -49,6 +49,35 @@ O descagando la carpeta como archivo zip y posteriormente descompromiendoló en 
 
 ---Explicación de la solución--- 
 - TABLERO
+
+Para comprender mejor el funcionamiento de este código partiremos de una idea general: tablero de ajedrez con luces. Si lo imaginamos de esa manera, podemos notar que es un tablero enorme, de 40 filas por 60 columnas y cada casilla tiene un foco que solo puede estar:
+-	Apagado (0) que es una célula muerta
+-	Encendido (1) que es una célula viva
+
+Esta parte del código que consiste en crear el Tablero hace una sola cosa: crear ese tablero de focos para que el resto del programa tenga con qué trabajar. El código se guarda como una matriz, que es una tabla de números con filas y columnas, como una hoja de Excel.
+0 0 0 0 0
+0 1 0 0 0
+0 0 1 1 0
+Las dos funciones que realicé:
+Paso 1:
+-	Crear_tablero_vacio(): el tablero en blanco 
+np.zeroa ((FILAS, COLUMNAS), dtype=int)
+
+En español se puede interpretar como: “crea una tabla de 40x60 llena de ceros”, es decir, todos los focos están apagados.
+El dtype=int solo le dice a Python que use números enteros (0) y no decimales como (0.0).
+Además, que el botón Limpiar borra todo y deja todo el tablero vacío.
+
+Paso 2:
+-	Crear_tablero_aleatorio(): el tablero con vida al azar 
+(np.random.random.((FILAS, COLUMNAS)) <0.25). astype(int)
+
+Esta línea es un poco más densa, por lo que es importante explicar cada componente. 
+En np.random.random(…) le pone a cada casilla un número al azar entre 0y 1, por ejemplo 0.83, 0.12, 0.57.
+En <0.25 es una pregunta que se le hace a cada casilla: “¿Tu número es menor a 0.25?”. Si la respuesta es Sí, la casilla queda en True, si es No queda False. Como la cuarta parte de los números cae por debajo de 0.25, más o menos 1 de cada 4 casillas sale verdadera.
+
+En la parte .astype(int) traduce True a 1 y False a 0, para volver a tener un tablero de ceros y unos.Este paso tiene como objetivo que el tablero arranque el juego y el botón Aleatorio.
+Prácticamente podemos decir que 0,25 “Es como decir que cada célula tiene 25% de probabilidad de nacer viva”.Mi parte crea el tablero: una tabla de 40x60 con ceros y unos, donde 0 es una célula muerta y 1 una viva. Puede empezar completamente vacía o con células vivas repartidas al azar.
+
   
 - REGLAS
   
