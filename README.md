@@ -77,7 +77,9 @@ El dtype=int solo le dice a Python que use números enteros (0) y no decimales c
 Además, que el botón Limpiar borra todo y deja todo el tablero vacío.
 
 Paso 2:
--	Crear_tablero_aleatorio(): el tablero con vida al azar 
+
+-	Crear_tablero_aleatorio(): el tablero con vida al azar
+  
 (np.random.random.((FILAS, COLUMNAS)) <0.25). astype(int)
 
 Esta línea es un poco más densa, por lo que es importante explicar cada componente. 
