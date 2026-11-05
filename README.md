@@ -77,6 +77,16 @@ Por último usamos .astype(int) que convierte un valor, columna o conjunto de da
 
 - INTERFAZ
 
+Mi contribución al proyecto fue el desarrollo de la parte visual e interactiva del Juego de la Vida, que es en donde se conectan la parte 1 (tablero) y  2 (reglas) del código con un interfaz (es el medio mediante el cual el usuario puede interactuar con un programa) que permite así al usuario visualizar y controlar la simulación. Para lograrlo utilice la biblioteca Streamlit que es la que permite la creación de aplicaciones web en Python. Las principales funciones fueron:
+•	Integre los modulos 1 y 2 (Tablero y Reglas) para así no repetir instrucciones.
+•	Utilice una función llamada tablero_a_imagen, que transforma los valores 0 y 1 en colores para así poder representar las células vivas    y muertas.
+•	Agregue un título, el tablero y los controles para que el usuario pueda interactuar. 
+•	Utilice st.session.state para así poder conservar la información de el tablero, la generación y si el juego esta activo o en pausa.
+•	Incorpore las opciones de iniciar, pausar, avanzar un paso, generar un tablero aleatorio y limpiar.
+•	Por último, utilice sleep() y st.rerun() para actualizar automáticamente el tablero mientras la simulación esta activa.
+Con todo esto logre que el Juego de la Vida no solamente realizara los cálculos intermitentes, sino que también pudiera visualizarse y manipularse de manera sencilla por el usuario.
+
+
 
 
 Nos guiamos del siguiente video: https://youtu.be/qPtKv9fSHZY
