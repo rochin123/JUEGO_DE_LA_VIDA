@@ -93,25 +93,41 @@ Prácticamente podemos decir que 0,25 “Es como decir que cada célula tiene 25
 - REGLAS
   
 Es importante partir de la siguiente lógica una célula sobrevive si tiene 2 o 3 vecinas, Al inicio del código importamos la librería NumPy que sirve para crear arreglos (arreys) que funcionan como matrices, el tablero del juego en si es una matriz, lo que tuvimos que hacer en esta parte fue adecuar la matriz a las reglas del juego 
+
 1 = célula viva 
+
 0= célula muerta 
-Si una célula está viva y sus células vecinas son 0 o 1, la célula muere
+
+Si una célula está viva y sus células vecinas son 0 o 1, la célula muere.
+
 Si una célula esta viva y tiene 2 o 3 vecinas esa célula permanece viva.
+
 Si una célula esta viva y tiene mas de 4 vecinos vivos, muere 
+
 Nace una célula cuando hay 3 células vecinas.
+
 Cualquier otra combinación, la célula muere.
+
 Una célula muerta nace si tiene exactamente 3 vecinas.
+
 Partiendo de esa idea generamos la primera función, un contador de células, vecinas en la matriz (en 8 direcciones), esto por medio de la siguiente matriz; 
-vecinos = (
+vecinos =
+
+(
         p[:-2, :-2] + p[:-2, 1:-1] + p[:-2, 2:]  Esto corresponde a la fila de arriba (3)
         + p[1:-1, :-2] + p[1:-1, 2:]           Esto corresponde a los movimientos de izquierda y derecha (2)
         + p[2:, :-2] + p[2:, 1:-1] + p[2:, 2:]     Y finalmente esto corresponde a la fila de abajo (3)
     )  
+
+    
 P= np.pad al inicio es una librería de NumPy que nos va a permitir construir los bordes de la matriz,  también se le conoce como relleno del arreglo o matriz. 
-Para la función dos de esta parte del código, establecemos cuando es que una célula vive y cuando es que una  célula muere 
+Para la función dos de esta parte del código, establecemos cuando es que una célula vive y cuando es que una  célula muere.
+
 En esta parte decimos que una célula viva (igualada a 1 por la condición de viva=1)
 tiene 2 o 3 vecinas: (tablero == 1) & ((vecinos == 2) | (vecinos == 3))
+
 Después establecemos que una célula nace cuando: (tablero == 0) & (vecinos == 3), que sería la condición de que para que nazca una célula debe haber 3 celulas vecinas, por ello, vecinos = 3 y tablero =0 porque partimos de una célula muerta con 3 células vecinas vivas.
+
 Por último usamos .astype(int) que convierte un valor, columna o conjunto de datos en un valor entero (0 o 1) , para que se cumpla la condición en las siguientes generaciones y entender si están vivas o nacen, la muerte al considerarse 0, no cumple ninguna condición, simplemente no aparece.
 
 
