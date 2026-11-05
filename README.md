@@ -3,6 +3,7 @@ Resumen: Este es un proyecto para la materia de programación donde tuvimos como
 Daniela Guzman Morales:Elaboración del tablero. 
 Karen Gisela Rochin Sandoval:Establecimiento de las reglas del juego.
 Estrella Yanet Mendez Reyes: Creación del Interfaz con ayuda de streamlit. 
+
 Objetivos:
 El objetivo general de este proyecto es aprender a elaborar el juego de la vida con ayuda de codigo a través de Python, entender la lógica detrás de las reglas del juego y aplicar modulos y codigo para ejecutar de manera satisfactoria el juego, incentivar el aprendizaje autónomo de nuestra parte mediante la investigación 
 La necesidades que aborda el juego es comprender el funcionamiento de sistemas células, simular procesos de supervivencia y muerte, observar como reglas simples generan comportamientos complejos, y a su vez aplicar conocimientos matematicos y de programación. 
