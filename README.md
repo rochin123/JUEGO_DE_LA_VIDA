@@ -17,7 +17,22 @@ General: El objetivo general de este proyecto es aprender a elaborar el juego de
 Particular: Aprender el funcionamiento de nuevos programas y módulos implementables al funcionamiento del juego, incentivar el aprendizaje autónomo mediante la resolución de problemas (creación del juego). 
 
 Intrucciones de instalación y ejecución:
-1- Abrir la liga del repositorio en tu navegador 
-2- Crear una copia del repositorio en tu dispositivo 
+
+1- Abrir la liga del repositorio en tu navegador. 
+
+2- Crear una copia del repositorio en tu dispositivo.
+
+Lo puedes hacer desde la terminal poniendo;
+   git clone URL DEL REPOSITORIO
+   
+O descagando la carpeta como archivo zip y posteriormente descompromiendoló en tu dispositivo.
+
+3- Abre el archivo JUEGO_VIDA.py desde tu terminal y coloca lo siguiente:
+
+     streamlit run JUEGO_VIDA.py
+     
+4- Pon ENTER
+
+5- Se abrirá una pantalla en streamlit con el juego :)
 
 
