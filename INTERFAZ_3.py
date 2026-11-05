@@ -1,6 +1,14 @@
 # =====================================================
 # PARTE 3: INTERFAZ (Streamlit)
 # =====================================================
+# Dentro de INTERFAZ_3.py
+import TABLERO_1
+import REGLAS_2
+
+# O bien, si importan funciones específicas:
+# from TABLERO_1 import crear_tablero
+# from REGLAS_2 import aplicar_reglas
+
 def tablero_a_imagen(tablero):
     """Convierte la matriz en una imagen: vivas verdes, muertas oscuras."""
     imagen = np.zeros((FILAS, COLUMNAS, 3), dtype=np.uint8)
