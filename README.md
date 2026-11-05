@@ -20,6 +20,7 @@ Intrucciones de instalación y ejecución:
 
 1- Abrir la liga del repositorio en tu navegador. 
 
+
 2- Crear una copia del repositorio en tu dispositivo.
 <img width="328" height="269" alt="image" src="https://github.com/user-attachments/assets/25079716-4eb6-414a-a734-7a49fb83f007" />
 
@@ -28,13 +29,18 @@ Lo puedes hacer desde la terminal poniendo;
    
 O descagando la carpeta como archivo zip y posteriormente descompromiendoló en tu dispositivo.
 
+
 3- Abre el archivo JUEGO_VIDA.py desde tu terminal y coloca lo siguiente:
 
      streamlit run JUEGO_VIDA.py
      
+     
 4- Pon ENTER
 
+
 5- Se abrirá una pantalla en streamlit con el juego :)
+
+
 <img width="625" height="396" alt="image" src="https://github.com/user-attachments/assets/9763bd6d-d086-4434-a9e8-37f0098c1ebc" />
 
 
