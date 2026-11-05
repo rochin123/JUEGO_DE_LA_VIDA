@@ -16,3 +16,8 @@ General: El objetivo general de este proyecto es aprender a elaborar el juego de
 
 Particular: Aprender el funcionamiento de nuevos programas y módulos implementables al funcionamiento del juego, incentivar el aprendizaje autónomo mediante la resolución de problemas (creación del juego). 
 
+Intrucciones de instalación y ejecución:
+1- Abrir la liga del repositorio en tu navegador 
+2- Crear una copia del repositorio en tu dispositivo 
+
+
