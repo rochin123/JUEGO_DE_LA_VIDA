@@ -55,10 +55,19 @@ Para comprender mejor el funcionamiento de este código partiremos de una idea g
 -	Encendido (1) que es una célula viva
 
 Esta parte del código que consiste en crear el Tablero hace una sola cosa: crear ese tablero de focos para que el resto del programa tenga con qué trabajar. El código se guarda como una matriz, que es una tabla de números con filas y columnas, como una hoja de Excel.
+
+
 0 0 0 0 0
+
+
 0 1 0 0 0
+
+
 0 0 1 1 0
+
+
 Las dos funciones que realicé:
+
 Paso 1:
 -	Crear_tablero_vacio(): el tablero en blanco 
 np.zeroa ((FILAS, COLUMNAS), dtype=int)
