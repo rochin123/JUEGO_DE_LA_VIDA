@@ -19,6 +19,8 @@ Particular: Aprender el funcionamiento de nuevos programas y módulos implementa
 Intrucciones de instalación y ejecución:
 
 1- Abrir la liga del repositorio en tu navegador. 
+<img width="328" height="269" alt="image" src="https://github.com/user-attachments/assets/813e55dc-4bde-4221-8f60-cc7ea9232251" />
+
 
 2- Crear una copia del repositorio en tu dispositivo.
 
